@@ -1,0 +1,144 @@
+<html><head><title>Code Mastery Quiz - Multiple Choice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .quiz-container {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      width: 100%;
+    }
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+    .question {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .code-block {
+      background-color: #f4f4f4;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      font-family: monospace;
+      white-space: pre-wrap;
+      margin-bottom: 20px;
+    }
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    input[type="radio"] {
+      margin: 0;
+    }
+    #submit {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+    }
+    #submit:hover {
+      background-color: #45a049;
+    }
+    #feedback {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    .correct {
+      color: green;
+    }
+    .incorrect {
+      color: red;
+    }
+    .progress {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Code Mastery Quiz</h1>
+    <div class="progress">Question 3 of 5</div>
+    <div id="question-container">
+      <p class="question">What will be the output of the following Python code?</p>
+      <div class="code-block">
+class Parent:
+    def __init__(self):
+        self.value = 5
+
+class Child(Parent):
+    def __init__(self):
+        super().__init__()
+        self.value *= 2
+
+obj = Child()
+print(obj.value)
+      </div>
+    </div>
+    <form id="quiz-form" method="GET" action="https://codemastery.quiz/question-4">
+      <div class="options">
+        <div class="option">
+          <input type="radio" id="option1" name="answer" value="5" required>
+          <label for="option1">5</label>
+        </div>
+        <div class="option">
+          <input type="radio" id="option2" name="answer" value="10" required>
+          <label for="option2">10</label>
+        </div>
+        <div class="option">
+          <input type="radio" id="option3" name="answer" value="15" required>
+          <label for="option3">15</label>
+        </div>
+        <div class="option">
+          <input type="radio" id="option4" name="answer" value="20" required>
+          <label for="option4">20</label>
+        </div>
+      </div>
+      <button type="submit" id="submit">Submit Answer</button>
+    </form>
+    <div id="feedback"></div>
+  </div>
+
+  <script>
+    document.getElementById('quiz-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const answer = document.querySelector('input[name="answer"]:checked').value;
+      const correctAnswer = "10";
+      const feedback = document.getElementById('feedback');
+      
+      if (answer === correctAnswer) {
+        feedback.textContent = "Correct! Moving to the next question...";
+        feedback.className = "correct";
+        setTimeout(() => {
+          window.location.href = "congrats.html";
+        }, 1500);
+      } else {
+        feedback.textContent = "Incorrect. Try again!";
+        feedback.className = "incorrect";
+      }
+    });
+  </script>
+</body></html>
