@@ -48,24 +48,9 @@ print(obj.value)
   </div>
 
   <script>
-    document.getElementById('quiz-form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const answer = document.querySelector('input[name="answer"]:checked').value;
-      const correctAnswer = "10";
-      const feedback = document.getElementById('feedback');
-      
-      if (answer === correctAnswer) {
-        feedback.textContent = "Correct! Moving to the next question...";
-        feedback.className = "correct";
-        setTimeout(() => {
-          window.location.href = "congrats.html";
-        }, 1500);
-      } else {
-        feedback.textContent = "Incorrect. Try again!";
-        feedback.className = "incorrect";
-      }
-    });
+
   </script>
 	<script src="script.js"></script>
+	<script src="multiple_choice_answer.js"></script>
 
 </body></html>
