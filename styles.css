@@ -1,0 +1,206 @@
+body
+{
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
+.question {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+.code-block {
+	background-color: #f4f4f4;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 10px;
+	font-family: monospace;
+	white-space: pre-wrap;
+	margin-bottom: 20px;
+}
+.quiz-container {
+	background-color: white;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	max-width: 600px;
+	width: 100%;
+}
+.completion-container {
+	background-color: white;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	max-width: 600px;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+  }
+.timer {
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #f8f9fa;
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+	width: 100%;
+	text-align: center;
+	z-index: 1000;
+	position: sticky;
+	top: 0;
+}
+.intro-container {
+	background-color: white;
+	border-radius: 10px;
+	padding: 30px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	max-width: 600px;
+	width: 100%;
+	margin-top: 20px; /* Adds some space between the timer and the content */
+}
+h1 {
+	color: #333;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.description {
+	font-size: 16px;
+	line-height: 1.6;
+	color: #666;
+	margin-bottom: 20px;
+}
+.instructions {
+	background-color: #f9f9f9;
+	border-left: 4px solid #4CAF50;
+	padding: 15px;
+	margin-bottom: 20px;
+}
+.instructions h2 {
+	color: #4CAF50;
+	margin-top: 0;
+}
+.instructions ul {
+	padding-left: 20px;
+}
+.start-btn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	display: block;
+	width: 200px;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none;
+}
+.start-btn:hover {
+	background-color: #45a049;
+}
+#answer {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+#submit {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+}
+#submit:hover {
+	background-color: #45a049;
+}
+#feedback {
+	margin-top: 20px;
+	font-weight: bold;
+}
+.correct {
+	color: green;
+}
+.incorrect {
+	color: red;
+}
+.message {
+	font-size: 18px;
+	margin-bottom: 20px;
+	color: #666;
+}
+.score {
+font-size: 24px;
+font-weight: bold;
+color: #4CAF50;
+margin-bottom: 20px;
+}
+.restart-btn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	text-decoration: none;
+	display: inline-block;
+  }
+  .restart-btn:hover {
+	background-color: #45a049;
+  }
+  .confetti {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: #f2d74e;
+	position: absolute;
+	left: 50%;
+	animation: confetti 5s ease-in-out -2s infinite;
+	transform-origin: left top;
+  }
+  .confetti:nth-child(1) {
+	background-color: #f2d74e; left: 10%; animation-delay: 0;
+  }
+  .confetti:nth-child(2) {
+	background-color: #95c3de; left: 20%; animation-delay: -5s;
+  }
+  .confetti:nth-child(3) {
+	background-color: #ff9a91; left: 30%; animation-delay: -3s;
+  }
+  .confetti:nth-child(4) {
+	background-color: #f2d74e; left: 40%; animation-delay: -2.5s;
+  }
+  .confetti:nth-child(5) {
+	background-color: #95c3de; left: 50%; animation-delay: -4s;
+  }
+  .confetti:nth-child(6) {
+	background-color: #ff9a91; left: 60%; animation-delay: -6s;
+  }
+  .confetti:nth-child(7) {
+	background-color: #f2d74e; left: 70%; animation-delay: -1.5s;
+  }
+  .confetti:nth-child(8) {
+	background-color: #95c3de; left: 80%; animation-delay: -2s;
+  }
+  .confetti:nth-child(9) {
+	background-color: #ff9a91; left: 90%; animation-delay: -3.5s;
+  }
+  .confetti:nth-child(10) {
+	background-color: #f2d74e; left: 100%; animation-delay: -2.5s;
+  }
+
+  @keyframes confetti {
+	0% { transform: rotateZ(15deg) rotateY(0deg) translate(0,0); }
+	25% { transform: rotateZ(5deg) rotateY(360deg) translate(-5vw,20vh); }
+	50% { transform: rotateZ(15deg) rotateY(720deg) translate(5vw,60vh); }
+	75% { transform: rotateZ(5deg) rotateY(1080deg) translate(-10vw,80vh); }
+	100% { transform: rotateZ(15deg) rotateY(1440deg) translate(10vw,110vh); }
+  }
