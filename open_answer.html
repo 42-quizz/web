@@ -1,0 +1,31 @@
+<html><head>
+  <title>Code Mastery Quiz</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+  <div class="quiz-container">
+	<div class="timer">Time: <span id="time"></span></div>
+    <h1>Code Mastery Quiz</h1>
+    <div id="question-container">
+      <p class="question">What will be the output of the following Python code?</p>
+      <div class="code-block">
+def mystery_function(x):
+    return x * 2
+
+result = mystery_function(5)
+print(result)
+      </div>
+    </div>
+    <form id="quiz-form" method="GET" action="https://codemastery.quiz/next-question">
+      <input type="text" id="answer" name="answer" placeholder="Enter your answer" required>
+      <button type="submit" id="submit">Submit Answer</button>
+    </form>
+    <div id="feedback"></div>
+  </div>
+
+
+	<script src="clock.js"></script>
+	<script src="written_answer.js"></script>
+
+</body></html>

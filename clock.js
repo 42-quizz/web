@@ -1,6 +1,6 @@
 let startTime;
 let timerInterval;
-const countdownTime = 30 * 60 * 1000; // 30 minutes in milliseconds
+const countdownTime = 42 * 60 * 1000; // 42 minutes in milliseconds
 let remainingTime = localStorage.getItem('remainingTime') ? parseInt(localStorage.getItem('remainingTime')) : countdownTime;
 
 function startTimer() {

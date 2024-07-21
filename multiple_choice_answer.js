@@ -20,9 +20,10 @@ document.addEventListener('DOMContentLoaded', function() {
   
 	  // Définir les bonnes réponses pour chaque question
 	  const correctAnswers = {
-		1: "Option2", // Réponse pour question 1
-		2: "Option1", // Réponse pour question 2
-		3: "10", // Réponse pour question 3
+		1: "0", // Réponse pour question 1
+		2: "1", // Réponse pour question 2
+		3: "1", // Réponse pour question 3
+		4: "1",
 		// Ajoutez d'autres réponses correctes au besoin
 	  };
   

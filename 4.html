@@ -6,30 +6,31 @@
   <div class="quiz-container">
 	<div class="timer">Time: <span id="time"></span></div>
     <h1>Code Mastery Quiz</h1>
-    <div class="progress">Question 3 of 42</div>
+    <div class="progress">Question 4 of 42</div>
     <div id="question-container">
-      <p class="question">Quel est le menbre du bocal le plus sympa :</p>
-      
+      <p class="question">Quelles sont les horaires du bocal ?</p>
+      <div class="code-block">
+Although you might think it's fake, they do work.
+      </div>
     </div>
     <form id="quiz-form" method="GET" action="https://codemastery.quiz/question-4">
       <div class="options">
         <div class="option">
-          <input type="radio" id="option1" name="answer" value="1" required>
-          <label for="option1">Gero</label>
+          <input type="radio" id="option1" name="answer" value="0" required>
+          <label for="option1">10:00h-18:00h</label>
         </div>
         <div class="option">
-          <input type="radio" id="option2" name="answer" value="1" required>
-          <label for="option2">Gero</label>
+          <input type="radio" id="option2" name="answer" value="0" required>
+          <label for="option2">8:00h-19:00h</label>
         </div>
         <div class="option">
           <input type="radio" id="option3" name="answer" value="1" required>
-          <label for="option3">Gero</label>
+          <label for="option3">8h-12h 14h-18h</label>
         </div>
         <div class="option">
-          <input type="radio" id="option4" name="answer" value="1" required>
-          <label for="option4">Gero</label>
+          <input type="radio" id="option4" name="answer" value="0" required>
+          <label for="option4">03:00h-22:42</label>
         </div>
-		<br>
       </div>
       <button type="submit" id="submit">Submit Answer</button>
     </form>
