@@ -1,0 +1,48 @@
+<html><head><title>Code Mastery Quiz - Multiple Choice</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+  <div class="quiz-container">
+	<div class="timer">Time: <span id="time"></span></div>
+    <h1>Code Mastery Quiz</h1>
+    <div class="progress">Question 27 of 42</div>
+    <div id="question-container">
+      <p class="question">En cas de freeze des postes de l’école, qui convient-il de blâmer ?</p>
+      
+    </div>
+    <form id="quiz-form" method="GET" action="https://codemastery.quiz/question-4">
+      <div class="options">
+        <div class="option">
+          <input type="radio" id="option1" name="answer" value="5" required>
+          <label for="option1">Le BDE</label>
+        </div>
+        <div class="option">
+          <input type="radio" id="option2" name="answer" value="10" required>
+          <label for="option2">Le constructeur</label>
+        </div>
+        <div class="option">
+          <input type="radio" id="option3" name="answer" value="15" required>
+          <label for="option3">Le fournisseur d’accès internet</label>
+        </div>
+        <div class="option">
+          <input type="radio" id="option4" name="answer" value="20" required>
+          <label for="option4">42 Paris</label>
+        </div>
+		<div class="option">
+			<input type="radio" id="option4" name="answer" value="20" required>
+			<label for="option4">Sherpa</label>
+		  </div>
+      </div>
+      <button type="submit" id="submit">Submit Answer</button>
+    </form>
+    <div id="feedback"></div>
+  </div>
+
+  <script>
+
+  </script>
+	<script src="clock.js"></script>
+	<script src="multiple_choice_answer.js"></script>
+
+</body></html>

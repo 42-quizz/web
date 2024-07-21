@@ -1,0 +1,28 @@
+<html><head>
+  <title>Code Mastery Quiz</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+  <div class="quiz-container">
+	<div class="timer">Time: <span id="time"></span></div>
+    <h1>Code Mastery Quiz</h1>
+	<div class="progress">Question 28 of 42</div>
+    <div id="question-container">
+      <p class="question">Quel est le login intra du deuxième correcteur du minishell de Amy Plant ?</p>
+      <div class="code-block">
+star de Youtube, elle a peut-etre un profil sur l'intra? Et peut-etre meme ailleurs sur le Net?
+      </div>
+    </div>
+    <form id="quiz-form" method="GET" action="https://codemastery.quiz/next-question">
+      <input type="text" id="answer" name="answer" placeholder="Enter your answer" required>
+      <button type="submit" id="submit">Submit Answer</button>
+    </form>
+    <div id="feedback"></div>
+  </div>
+
+
+	<script src="clock.js"></script>
+	<script src="written_answer.js"></script>
+
+</body></html>
