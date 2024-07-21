@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		2: "1", // Réponse pour question 2
 		3: "1", // Réponse pour question 3
 		4: "1",
+		5: "0",
 		// Ajoutez d'autres réponses correctes au besoin
 	  };
   

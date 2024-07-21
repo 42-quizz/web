@@ -6,40 +6,27 @@
   <div class="quiz-container">
 	<div class="timer">Time: <span id="time"></span></div>
     <h1>Code Mastery Quiz</h1>
-    <div class="progress">Question 3 of 42</div>
+    <div class="progress">Question 23 of 42</div>
     <div id="question-container">
-      <p class="question">What will be the output of the following Python code?</p>
-      <div class="code-block">
-class Parent:
-    def __init__(self):
-        self.value = 5
-
-class Child(Parent):
-    def __init__(self):
-        super().__init__()
-        self.value *= 2
-
-obj = Child()
-print(obj.value)
-      </div>
+      <p class="question">Lequel de ces campus n'existe pas ?</p>
     </div>
     <form id="quiz-form" method="GET" action="https://codemastery.quiz/question-4">
       <div class="options">
         <div class="option">
           <input type="radio" id="option1" name="answer" value="5" required>
-          <label for="option1">5</label>
+          <label for="option1">1337</label>
         </div>
         <div class="option">
           <input type="radio" id="option2" name="answer" value="10" required>
-          <label for="option2">10</label>
+          <label for="option2">42 perpignan occitanie</label>
         </div>
         <div class="option">
           <input type="radio" id="option3" name="answer" value="15" required>
-          <label for="option3">15</label>
+          <label for="option3">42 Seatle</label>
         </div>
         <div class="option">
           <input type="radio" id="option4" name="answer" value="20" required>
-          <label for="option4">20</label>
+          <label for="option4">codam</label>
         </div>
       </div>
       <button type="submit" id="submit">Submit Answer</button>

@@ -6,40 +6,30 @@
   <div class="quiz-container">
 	<div class="timer">Time: <span id="time"></span></div>
     <h1>Code Mastery Quiz</h1>
-    <div class="progress">Question 3 of 42</div>
+    <div class="progress">Question 8 of 42</div>
     <div id="question-container">
-      <p class="question">What will be the output of the following Python code?</p>
+      <p class="question">Combien y a-t-il de pc a 42 perpignan ?</p>
       <div class="code-block">
-class Parent:
-    def __init__(self):
-        self.value = 5
-
-class Child(Parent):
-    def __init__(self):
-        super().__init__()
-        self.value *= 2
-
-obj = Child()
-print(obj.value)
+Oui, en comptant aussi ceux du bocal...
       </div>
     </div>
     <form id="quiz-form" method="GET" action="https://codemastery.quiz/question-4">
       <div class="options">
         <div class="option">
-          <input type="radio" id="option1" name="answer" value="5" required>
-          <label for="option1">5</label>
+          <input type="radio" id="option1" name="answer" value="0" required>
+          <label for="option1">INT_MAX</label>
         </div>
         <div class="option">
-          <input type="radio" id="option2" name="answer" value="10" required>
-          <label for="option2">10</label>
+          <input type="radio" id="option2" name="answer" value="0" required>
+          <label for="option2">666</label>
         </div>
         <div class="option">
-          <input type="radio" id="option3" name="answer" value="15" required>
-          <label for="option3">15</label>
+          <input type="radio" id="option3" name="answer" value="0" required>
+          <label for="option3">135</label>
         </div>
         <div class="option">
-          <input type="radio" id="option4" name="answer" value="20" required>
-          <label for="option4">20</label>
+          <input type="radio" id="option4" name="answer" value="1" required>
+          <label for="option4">42</label>
         </div>
       </div>
       <button type="submit" id="submit">Submit Answer</button>
