@@ -1,28 +1,52 @@
-<html><head>
-  <title>Code Mastery Quiz</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+<html><head><title>Code Mastery Quiz - Multiple Choice</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 
 </head>
 <body>
   <div class="quiz-container">
 	<div class="timer">Time: <span id="time"></span></div>
     <h1>Code Mastery Quiz</h1>
-	<div class="progress">Question 6 of 42</div>
+    <div class="progress">Question 6 of 42</div>
     <div id="question-container">
-      <p class="question">qu'y avait-il avant à la place de 42-Perpignan ?</p>
-      <div class="code-block">
-Tip: c'était un magazin...
-      </div>
+      <p class="question">Qu'y avait-t-il a la place de 42 Perpignan, avant ?</p>
     </div>
-    <form id="quiz-form" method="GET" action="https://codemastery.quiz/next-question">
-      <input type="text" id="answer" name="answer" placeholder="Enter your answer" required>
+    <form id="quiz-form" method="GET" action="https://codemastery.quiz/question-4">
+      <div class="options">
+        <div class="option">
+          <input type="radio" id="option1" name="answer" value="0" required>
+          <label for="option1">Un magasin H&M</label>
+        </div>
+        <div class="option">
+          <input type="radio" id="option2" name="answer" value="0" required>
+          <label for="option2">Un magasin Zara</label>
+        </div>
+        <div class="option">
+          <input type="radio" id="option3" name="answer" value="0" required>
+          <label for="option3">Un café Starbucks</label>
+        </div>
+        <div class="option">
+          <input type="radio" id="option4" name="answer" value="1" required>
+          <label for="option4">La Fnac</label>
+        </div>
+		<div class="option">
+			<input type="radio" id="option4" name="answer" value="0" required>
+		<label for="option4">Un Monoprix</label>
+		  </div>
+		  <div class="option">
+			<input type="radio" id="option4" name="answer" value="0" required>
+		<label for="option4">Un magasin de jouets Toys "R" Us</label>
+		  </div>
+		  <br>
+      </div>
       <button type="submit" id="submit">Submit Answer</button>
     </form>
     <div id="feedback"></div>
-  </div>
+</div>
 
+  <script>
 
+  </script>
 	<script src="clock.js"></script>
-	<script src="written_answer.js"></script>
+	<script src="multiple_choice_answer.js"></script>
 
 </body></html>
