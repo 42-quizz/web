@@ -1,3 +1,9 @@
+function displayRemainingTime() {
+	const remainingTime = parseInt(localStorage.getItem('remainingTime'));
+	const remainingMinutes = Math.floor(remainingTime / (60 * 1000));
+	document.getElementById('remaining-time').textContent = remainingMinutes;
+}
+
 document.getElementById('quiz-form').addEventListener('submit', function(e) {
     e.preventDefault();
     
@@ -56,6 +62,8 @@ document.getElementById('quiz-form').addEventListener('submit', function(e) {
     const answer = document.getElementById('answer').value.trim();
     const feedback = document.getElementById('feedback');
     
+
+
 	let isCorrect = false;
 	if (Array.isArray(correctAnswer)) {
 		isCorrect = correctAnswer.includes(answer);
@@ -79,7 +87,11 @@ document.getElementById('quiz-form').addEventListener('submit', function(e) {
         feedback.textContent = "You have completed all questions!";
       }
     } else {
-      feedback.textContent = "Incorrect. Try again!";
-      feedback.className = "incorrect";
+		feedback.textContent = "Incorrect. Try again!";
+		feedback.className = "incorrect";
+		let remainingTime = parseInt(localStorage.getItem('remainingTime'));
+		remainingTime -= 120000;
+		localStorage.setItem('remainingTime', remainingTime);
+		displayRemainingTime();
     }
   });

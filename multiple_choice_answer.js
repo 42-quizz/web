@@ -88,6 +88,10 @@ document.addEventListener('DOMContentLoaded', function() {
 	  } else {
 		feedback.textContent = "Incorrect. Try again!";
 		feedback.className = "incorrect";
+		let remainingTime = parseInt(localStorage.getItem('remainingTime'));
+		remainingTime -= 120000;
+		localStorage.setItem('remainingTime', remainingTime);
+		displayRemainingTime();
 	  }
 	});
   });
