@@ -38,82 +38,116 @@ libft
 11 Combien de projets compose le tronc commun ?
 ???
 
-12 Quel projet ne fait pas parti du cursus 42:
+12 Quel est le projet qui consiste à recréer un interpréteur de commandes Unix en C ?
+	UnixShell 
+	ShellV2
+	ft_unix
+	Minishell
+
+13 Quel projet ne fait pas parti du cursus 42:
     Minitalk
     Minishell
     *Minitel
     MiniRt
 
-13 Pourquoi n'y a t-il plus de machine a café à 42 ?
+14 Quelle est la taille maximale d'une équipe de projet à 42 ?
+	2
+	3
+	4
+	5
 
-14 Qui a offert le Bar à Eau ?
+15 Pourquoi n'y a t-il plus de machine a café à 42 ?
 
-15 Quels sont les 4 coalitions de 42 ?
+16 Qui a offert le Bar à Eau ?
 
-16 Quel "titre" de l'intra debloque-t-on quand on atteinds le niveau 25 ?
+17 Quels sont les 4 coalitions de 42 ?
 
-17 Qui sont les tuteurs de cette piscine ?
+18 Quel "titre" de l'intra debloque-t-on quand on atteinds le niveau 25 ?
 
-18 Comment appelle t-on les étudiants de l’école ? (Duoquadra j’sais plus quoi)
+19 Combien de campus 42 y a-t-il dans le monde (en 2023) ?
+???
 
-19 Comment s’appelle la boss qui nettoie vos postes ?
+20 Qui sont les tuteurs de cette piscine ?
 
-20 Qui est le principal mécène de 42 Perpignan?
+21 Comment appelle t-on les étudiants de l’école ? (Duoquadra j’sais plus quoi)
 
-21 Nicolas, Xavier, Florian et... ? (Kwame, le prenom des 4 fondateurs de 42.)
+22 Comment s’appelle la boss qui nettoie vos postes ?
 
-22 Comment appelle-t-on le peuple du bocal :
+23 Qui est le principal mécène de 42 Perpignan?
+
+24 Qui a inventé le binaire ?
+
+- Gottfried Leibniz, en s'inspirant de vieux écrits chinois.
+- Isaac Newton, en explorant les principes de la gravitation universelle.
+- René Descartes, en développant sa théorie du dualisme esprit-corps.
+- Xavier Niel, dans le but de faciliter les transmissions minitel pour 3615 ULLA.
+
+25 Nicolas, Xavier, Florian et... ? (Kwame, le prenom des 4 fondateurs de 42.)
+
+26 Quel est le nom de la plateforme en ligne utilisée par les étudiants pour collaborer et échanger des informations ?
+	Slack
+	Discord
+	Teams
+	Zoom
+
+27 Comment appelle-t-on le peuple du bocal :
 *Les bocaliens,
 Les bocaleux,
 Les bocaloïdes,
 Les bocalsiens,
 Les bocalonautes,
 
-23 - le quel de ces campus nexiste pas
+28 - le quel de ces campus nexiste pas
         *A - 42 Seatle
         B - 42 perpignan occitanie
         C - 1337
         D - codam 
 
-24 La distance entre le centre et la surface de la terre est moins qu'entre 42 Perpignan et
+29 La distance entre le centre et la surface de la terre est moins qu'entre 42 Perpignan et
     42 Angoulême
     42 Hive (en Finlande)
     *42 Rio de Janeiro (au Brésil)
     42 Québec (au Canada)
 
-25 Dans l'école 42 il y a une licorne, que peut-on lire sur son ventre ?
+30 Dans l'école 42 il y a une licorne, que peut-on lire sur son ventre ?
     La meilleure école du monde
     *Veolia avec un petit cœur rose
     Il y a en fait deux licornes dans 42 mais la seconde est bien cachée (et rose).
     Rien, il n'y a pas de chose écrite à cet endroit là.
 
-26 - que se passe t'il lors de la randominette si la personne nest pas log ?
+31 - que se passe t'il lors de la randominette si la personne nest pas log ?
        ???
 	    A - rien
         B - il est tige par mail
         C - les personnes autours de lui ce font rm -rf leurs home
         D - la rangee entiere est rm -rf
 
-27 En cas de freeze des postes de l’école, qui convient-il de blâmer ?
+32 En cas de freeze des postes de l’école, qui convient-il de blâmer ?
 *Le BDE,
 *Le constructeur,
 *Le fournisseur d’accès internet,
 *42 Paris,
 *Sherpa
 
-28 Quel est le login intra du deuxième correcteur du minishell de Amy Plant ?
+33 Quel est le login intra du deuxième correcteur du minishell de Amy Plant ?
 frthierr
 
-29 Selon la Norme, par quelle lettre de l'alphabet doit précéder le nom d'une structure de type enum ?
+34 Selon la Norme, par quelle lettre de l'alphabet doit précéder le nom d'une structure de type enum ?
 e
 
-30 À qui doit-on l'invention du symbole arobase (@) ?
+35 Quelle est l'origine du code d'erreur HTTP "404", choisi pour représenter une page non trouvée ?
+- Il fait référence à la salle où les ingénieurs d'Apache ont développé le serveur HTTP.
+- Il honore le numéro de vol du premier satellite de communication.
+- Il fait référence à une rue célèbre à San Francisco liée à la technologie.
+- Il représente un nombre manquant dans les premiers systèmes de serveur.
+
+36 À qui doit-on l'invention du symbole arobase (@) ?
     *À des moines copistes au sixième siècle après J.C.
     À Trévor A. Robase, un informaticien spécialisé en cryptologie.
     Aux services secrets américains, lors de la Seconde Guerre mondiale, qui l'utilisaient dans leurs messages codés.
     Il a été inventé par 42 Paris lors de l'invention du premier email.
 
-31 Une des gargouilles de la cathédrale de Washington est
+37 Une des gargouilles de la cathédrale de Washington est
     *Darth Vader.
     Une des gargouilles de Notre-Dame de Paris donnée en signe d’amitié entre les deux pays.
     Une “pink flappy unicorn “ qui “dancing in a rainbow”.
