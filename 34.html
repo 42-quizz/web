@@ -1,0 +1,52 @@
+<html><head><title>Code Mastery Quiz - Multiple Choice</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+  <div class="quiz-container">
+	<div class="timer">Time: <span id="time"></span></div>
+    <h1>Code Mastery Quiz</h1>
+    <div class="progress">Question 34 of 42</div>
+    <div id="question-container">
+      <p class="question">Laquelle des propositions suivantes décrit le mieux la déclaration Void (*(*f[])())() en C ?</p>
+    </div>
+    <form id="quiz-form" method="GET" action="https://codemastery.quiz/question-4">
+      <div class="options">
+        <div class="option">
+          <input type="radio" id="option1" name="answer" value="1" required>
+          <label for="option1">f est un pointeur vers un tableau de taille non spécifiée, de fonctions qui renvoient des pointeurs vers des fonctions qui renvoient void</label>
+        </div>
+        <div class="option">
+          <input type="radio" id="option2" name="answer" value="0" required>
+          <label for="option2">f est un tableau de taille non spécifiée, de pointeurs vers des fonctions qui renvoient des pointeurs vers des fonctions qui renvoient void</label>
+        </div>
+        <div class="option">
+          <input type="radio" id="option3" name="answer" value="0" required>
+          <label for="option3">f est une fonction qui renvoie un tableau de taille non spécifiée, de pointeurs vers des fonctions qui renvoient void</label>
+        </div>
+        <div class="option">
+          <input type="radio" id="option4" name="answer" value="0" required>
+          <label for="option4">f est un pointeur vers une fonction qui renvoie un tableau de taille non spécifiée, de pointeurs vers des fonctions qui renvoient void</label>
+        </div>
+		<div class="option">
+			<input type="radio" id="option4" name="answer" value="0" required>
+			<label for="option4">Je sais pas</label>
+		</div>
+		<div class="option">
+			<input type="radio" id="option4" name="answer" value="0" required>
+			<label for="option4">On s'en fout</label>
+		  </div>
+		<br>
+      </div>
+      <button type="submit" id="submit">Submit Answer</button>
+    </form>
+    <div id="feedback"></div>
+  </div>
+
+  <script>
+
+  </script>
+	<script src="clock.js"></script>
+	<script src="multiple_choice_answer.js"></script>
+
+</body></html>
